@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* .mycontainer{
+    @apply container px-40 py-16 mx-auto;
+} */
+
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden; /* This stops the horizontal "drag" */
+  }
+}
+
+@layer components {
+  .mycontainer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* Responsive padding: small on mobile, large on desktop */
+    @apply px-4 md:px-20 lg:px-40; 
+  
+}
+
+  .mycontainer2{
+      @apply container px-40 py-16 mx-auto;
+  }
+}
